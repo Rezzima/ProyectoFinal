@@ -1,0 +1,15 @@
+<div class="jukebox-container">
+    <div class="turntable">
+        <img
+        *ngFor="let vinilo of vinilos; let i = index" 
+        [src]="vinilos" 
+        [class.active]="i === currentIndex"
+        class="vinyl"
+        >
+    </div>
+
+    <div class="controls">
+        <button (click)="prev()">←</button>
+        <button (click)="next()">→</button>
+    </div>
+</div>

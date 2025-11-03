@@ -4,7 +4,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 
 /*
   formcontrol = controlador de cada dato ingresado
-  formgroup = dorectiva para formularios reactivos en angular, agrupa cada formcontrol
+  formgroup = directiva para formularios reactivos en angular, agrupa cada formcontrol
   reactiveformModules = permite usar formularios reactivos
   validators = Valida cada dato que ingreses
 */

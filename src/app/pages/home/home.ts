@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Jukebox } from '../../jukebox/jukebox';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [Jukebox],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
