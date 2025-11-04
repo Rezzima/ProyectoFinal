@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Nuevo producto</h2>
+    
+    <!-- llamo a formgroup para crear formulario y le pongo un nombre con el igual 
+        [formGroup] es una directiva de formularios reactivos 
+    -->
+    <form [formGroup]="nuevoProducto" (ngSubmit)="crearProducto()">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <!-- 
+                formControlName guarda el valor individual de cada dato
+                formGroup agrupa los datos de todo en un formulario 
+            -->
+            <input type="text" id="nombre" class="form-control" formControlName="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="number" id="precio" class="form-control" formControlName="precio">
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <input type="text" id="descripcion" class="form-control" formControlName="descripcion">
+        </div>
+        <!--
+            el boton se deshabilita cuando el producto no es valido, ej cuando faltan campos
+        -->
+        <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">Guardar</button>
+    </form>
+</div>

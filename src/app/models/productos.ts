@@ -3,4 +3,6 @@ export interface NewProduct {
     nombre: string;
     precio: number;
     descripcion: string;
+    img?: string; //el signo indica que no es estrictamente necesario
+    alt?: string; 
 }

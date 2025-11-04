@@ -3,9 +3,10 @@
         <img
         *ngFor="let vinilo of vinilos; let i = index" 
         [src]="vinilos" 
-        [class.active]="i === currentIndex"
+        [class.active]="i === currentIndex" 
         class="vinyl"
         >
+        <!-- class active agrega la -->
     </div>
 
     <div class="controls">
